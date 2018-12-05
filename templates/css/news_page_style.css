@@ -1,0 +1,12 @@
+body {
+    background-color: #80bdff;
+}
+
+.main {
+    background-color: #f7f7f7;
+}
+.card > .card:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
