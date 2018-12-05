@@ -89,107 +89,195 @@
     </script>
 </head>
 <body class="bg-light">
+
     <div class="container">
-        <div class="row" style="margin-bottom: 40px ;">
+        <div class="row">
             <div class="col">
-                <div class="card text-right" style="direction: rtl">
-                  <div class="card-header">
-                    تاریخچه
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">جدول بازی ها</h5>
-                    <p class="card-text" >
-                        <table class="table table-hover" id="games_table">
-                          <thead>
-                            <tr>
-                              <th scope="col" onclick="sortTable(0)" style="cursor:pointer">رقیب</th>
-                              <th scope="col" onclick="sortTable(1)" style="cursor:pointer">برد یا باخت</th>
-                              <th scope="col" onclick="sortTable(2)" style="cursor:pointer">امتیاز</th>
-                              <th scope="col" onclick="sortTable(3)" style="cursor:pointer">تاریخ</th>
-                              <th scope="col">لینک بازی</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td scope="row">تیم 1</td>
-                              <td>برد</td>
-                              <td>10</td>
-                              <td>1392/10/10</td>
-                              <td><a class="" href="#">صفحه بازی</a> </td>
-                            </tr>
-                            <tr>
-                              <td scope="row">تیم 2</td>
-                              <td>باخت</td>
-                              <td>20</td>
-                              <td>1392/5/5</td>
-                              <td><a class="" href="#">صفحه بازی</a> </td>
-                            </tr>
-                            <tr>
-                              <td scope="row">تیم 1</td>
-                              <td>باخت</td>
-                              <td>200</td>
-                              <td>1393/5/5</td>
-                              <td><a class="" href="#">صفحه بازی</a> </td>
-                            </tr>
-                          </tbody>
-                        </table>
+                <button class="btn btn-info" style="margin: 30px;">دنبال کردن</button>
+                <span class="text-muted ">برای دنبال کردن اخبار و بازی های مربوط به این تیم روی این دکمه کلیک کنید</span>
 
 
-                    </p>
+            </div>
+        </div>
+        <div class="row flex-row-reverse">
+            <div class="col-8">
+
+
+                <div class="container">
+            <div class="row" style="margin-bottom: 40px ;">
+                <div class="col">
+                    <div class="card text-right" style="direction: rtl">
+                      <div class="card-header">
+                        تاریخچه
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">جدول بازی ها</h5>
+                        <p class="card-text" >
+                            <table class="table table-hover" id="games_table">
+                              <thead>
+                                <tr>
+                                  <th scope="col" onclick="sortTable(0)" style="cursor:pointer">رقیب</th>
+                                  <th scope="col" onclick="sortTable(1)" style="cursor:pointer">برد یا باخت</th>
+                                  <th scope="col" onclick="sortTable(2)" style="cursor:pointer">امتیاز</th>
+                                  <th scope="col" onclick="sortTable(3)" style="cursor:pointer">تاریخ</th>
+                                  <th scope="col">لینک بازی</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td scope="row">تیم 1</td>
+                                  <td>برد</td>
+                                  <td>10</td>
+                                  <td>1392/10/10</td>
+                                  <td><a class="" href="#">صفحه بازی</a> </td>
+                                </tr>
+                                <tr>
+                                  <td scope="row">تیم 2</td>
+                                  <td>باخت</td>
+                                  <td>20</td>
+                                  <td>1392/5/5</td>
+                                  <td><a class="" href="#">صفحه بازی</a> </td>
+                                </tr>
+                                <tr>
+                                  <td scope="row">تیم 1</td>
+                                  <td>باخت</td>
+                                  <td>200</td>
+                                  <td>1393/5/5</td>
+                                  <td><a class="" href="#">صفحه بازی</a> </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+
+                        </p>
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 40px ;">
+                <div class="col">
+                    <div class="card text-right" style="direction: rtl">
+                      <div class="card-header">
+                        اعضا
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">جدول اعضا فعلی</h5>
+                        <p class="card-text" >
+                            <table class="table table-hover" id="players_table">
+                              <thead>
+                                <tr>
+                                  <th scope="col" >نام</th>
+                                  <th scope="col">پست</th>
+                                  <th scope="col">لینک بازیکن</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td scope="row">داریوش</td>
+                                  <td>سرمربی</td>
+                                  <td><a class="" href="#">صفحه بازی</a> </td>
+                                </tr>
+                                <tr>
+                                  <td scope="row">شایان</td>
+                                  <td>دروازبان</td>
+                                  <td><a class="" href="#">صفحه بازی</a> </td>
+                                </tr>
+                                <tr>
+                                  <td scope="row">علی</td>
+                                  <td>دفاعی</td>
+                                  <td><a class="" href="#">صفحه بازی</a> </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                            <input class="btn-outline-dark bg-white" type="text" id="myInput" onkeyup="filterFunc()" placeholder="فیلتر بر اساس پست">
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+            </div>
+            <div class="col">
+
+                <div class="row">
+            <div class="col">
+
+                <hr>
+                <h2>اخبار مرتبط</h2>
+                <hr>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+
+                <div class="media img-thumbnail ">
+
+                  <div class="media-body ">
+                    <h5 class="mt-0">خبر مرتبط</h5>
+                      <p class="text-muted">آذر 90</p>
+                      <a class="btn-link" href="#">مشاهده خبر</a>
                   </div>
+                  <img class="mr-3 align-self-center" src="../../Resources/pics/maxresdefault.jpg" alt="Generic placeholder image" style="width: 100px; height: 100px;">
                 </div>
 
             </div>
         </div>
 
-        <div class="row" style="margin-bottom: 40px ;">
+        <div class="row">
             <div class="col">
-                <div class="card text-right" style="direction: rtl">
-                  <div class="card-header">
-                    اعضا
+
+                <div class="media img-thumbnail ">
+
+                  <div class="media-body ">
+                    <h5 class="mt-0">خبر مرتبط</h5>
+                      <p class="text-muted">آذر 90</p>
+                      <a class="btn-link" href="#">مشاهده خبر</a>
                   </div>
-                  <div class="card-body">
-                    <h5 class="card-title">جدول اعضا فعلی</h5>
-                    <p class="card-text" >
-                        <table class="table table-hover" id="players_table">
-                          <thead>
-                            <tr>
-                              <th scope="col" >نام</th>
-                              <th scope="col">پست</th>
-                              <th scope="col">لینک بازیکن</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td scope="row">داریوش</td>
-                              <td>سرمربی</td>
-                              <td><a class="" href="#">صفحه بازی</a> </td>
-                            </tr>
-                            <tr>
-                              <td scope="row">شایان</td>
-                              <td>دروازبان</td>
-                              <td><a class="" href="#">صفحه بازی</a> </td>
-                            </tr>
-                            <tr>
-                              <td scope="row">علی</td>
-                              <td>دفاعی</td>
-                              <td><a class="" href="#">صفحه بازی</a> </td>
-                            </tr>
-                          </tbody>
-                        </table>
+                  <img class="mr-3 align-self-center" src="../../Resources/pics/maxresdefault.jpg" alt="Generic placeholder image" style="width: 100px; height: 100px;">
+                </div>
+
+            </div>
+        </div>
 
 
-                    </p>
+        <div class="row">
+            <div class="col">
+
+                <div class="media img-thumbnail ">
+
+                  <div class="media-body ">
+                    <h5 class="mt-0">خبر مرتبط</h5>
+                      <p class="text-muted">آذر 90</p>
+                      <a class="btn-link" href="#">مشاهده خبر</a>
                   </div>
-                  <div class="card-footer">
-                        <input class="btn-outline-dark bg-white" type="text" id="myInput" onkeyup="filterFunc()" placeholder="فیلتر بر اساس پست">
-                  </div>
+                  <img class="mr-3 align-self-center" src="../../Resources/pics/maxresdefault.jpg" alt="Generic placeholder image" style="width: 100px; height: 100px;">
                 </div>
 
             </div>
         </div>
 
     </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

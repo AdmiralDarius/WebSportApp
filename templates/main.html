@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
@@ -29,8 +31,71 @@
 
                 <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light">
 
-                  <a class="navbar-brand" href="#">ثبت نام</a>
-                  <a class="navbar-brand" href="#">ورود</a>
+                  <a class="navbar-brand" href="#" id="signup">ثبت نام</a>
+                  <a class="navbar-brand" href="#" id="login">ورود</a>
+                    <script>
+                    $(document).ready(function(){
+                        $("#login").click(function(){
+                            $("#loginModal").modal();
+                        });
+                    });
+                    $(document).ready(function(){
+                        $("#signup").click(function(){
+                            $("#signupModal").modal();
+                        });
+                    });
+                    </script>
+                  <!-- Modal -->
+                  <div class="modal fade" id="loginModal" role="dialog" style="direction: rtl">
+                    <div class="modal-dialog">
+
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span> ورود</h4>
+                        </div>
+                        <div class="modal-body">
+                          <form role="form">
+                            <div class="form-group">
+                              <label for="usrname"><span class="glyphicon glyphicon-user"></span> نام کاربری</label>
+                              <input type="text" class="form-control" id="usrname" placeholder="علی">
+                            </div>
+                            <div class="form-group">
+                              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> رمز عبور</label>
+                              <input type="text" class="form-control" id="psw" placeholder="1434">
+                            </div>
+                            <button type="submit" class="btn btn-default btn-success btn-block"><span class="glyphicon glyphicon-off"></span> تایید</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    <!-- Modal -->
+                  <div class="modal fade" id="signupModal" role="dialog" style="direction: rtl">
+                    <div class="modal-dialog">
+
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span> ثبت نام</h4>
+                        </div>
+                        <div class="modal-body">
+                          <form role="form">
+                            <div class="form-group">
+                              <label for="usrname"><span class="glyphicon glyphicon-user"></span> نام کاربری</label>
+                              <input type="text" class="form-control" id="usrname" placeholder="علی">
+                            </div>
+                            <div class="form-group">
+                              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> رمز عبور</label>
+                              <input type="text" class="form-control" id="psw2" placeholder="1434">
+                            </div>
+                            <button type="submit" class="btn btn-default btn-success btn-block"><span class="glyphicon glyphicon-off"></span> تایید</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto" style="font-size: 2em">
@@ -67,6 +132,50 @@
                     footer
                 -->
 
+                <!-- Footer -->
+        <footer class="page-footer font-small teal pt-4 text-right bg-light" style="direction: rtl; margin-top: 30px">
+
+            <!-- Footer Text -->
+            <div class="container-fluid text-center text-md-left ">
+
+              <!-- Grid row -->
+              <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3 text-right">
+
+                  <!-- Content -->
+                  <h5 class="text-uppercase font-weight-bold">فوتبال</h5>
+                    <p > اخبار و اطلاعات مربوط به تیم و بازیکنان مورد علاقه خود را دنبال کنید </p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mb-md-0 mb-3 text-right">
+
+                  <!-- Content -->
+                  <h5 class="text-uppercase font-weight-bold">بسکتبال</h5>
+                    <p> اخبار و اطلاعات مربوط به تیم و بازیکنان مورد علاقه خود را دنبال کنید </p>
+                </div>
+                <!-- Grid column -->
+
+              </div>
+              <!-- Grid row -->
+
+            </div>
+            <!-- Footer Text -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">حقوق :
+                <a href="#">داریوش و شایان</a>
+            </div>
+            <!-- Copyright -->
+
+          </footer>
+          <!-- Footer -->
+
             </div>
         </div>
 
@@ -74,8 +183,6 @@
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 
 </body>
 </html>
